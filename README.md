@@ -1,4 +1,4 @@
-# WinePrediction
+# Wine Quality Prediction
 ## Steps to set up and run this project without docker-
 1. Login to aws  
 2. Create EMR cluster to train model in parallel  
