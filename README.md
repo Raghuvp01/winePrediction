@@ -9,15 +9,14 @@
 7. Update the EMR cluster using sudo yum update  
 8. Using "aws s3 cp s3://raghuvp/WinePrediction.py ./" command download the S3 object to EMR  
 9. Run the WinePrediction.py file using command "spark-submit WinePrediction.py"  
-10. Terminate the EMR cluster  
-11. Create new EC2 instance    
-12. Write python code for validation of model in WineValidation.py file  
-13. Upload the WineValidation.py file and ValidationDataset.csv to S3 bucket  
-14. Connect to EC2 instance using SSH connection with key  
-15. Update the instance  
-16. Download and install java on EC2 instance  
-17. Download and install Apache Spark on EC2 instance  
-18. Set the environment variables for both java and spark  
-19. Using "aws s3 cp s3://raghuvp/WinePrediction.py ./" command download the S3 object to EC2 instance  
-20. Run WineValidation.py file using command "spark-submit WineValidation.py"  
-21. Terminate the EC2 instance  
+10. Save the model in the S3 bucket  
+11. Terminate the EMR cluster  
+12. Create new EC2 instance     
+15. Connect to EC2 instance using SSH connection with key  
+16. Update the instance  
+17. Download and install java on EC2 instance  
+18. Download and install Apache Spark on EC2 instance  
+19. Set the environment variables for both java and spark  
+20. Load the saved model from S3 bucket  
+21. Run the model using command "spark-submit WinePrediction.py"  
+22. Terminate the EC2 instance  
