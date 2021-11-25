@@ -18,5 +18,6 @@
 18. Download and install Apache Spark on EC2 instance  
 19. Set the environment variables for both java and spark  
 20. Load the saved model from S3 bucket  
-21. Run the model using command "spark-submit WinePrediction.py"  
-22. Terminate the EC2 instance  
+21. Download the ValidationDataset.csv from S3  
+22. Run the model using command "spark-submit WinePrediction.py"  
+23. Terminate the EC2 instance  
