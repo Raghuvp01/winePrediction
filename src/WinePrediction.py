@@ -20,7 +20,7 @@ if __name__ == "__main__":
     spark = SparkSession(sc)
 
     # Loading the dataset
-    df = spark.read.csv('TrainingDataset.csv', inferSchema='true', header=True, sep=";")
+    df = spark.read.format("csv").load(path , inferSchema='true',header = True ,sep =";")
     df.printSchema()
     # changing the 'quality' column name to 'label'
     for col_name in df.columns[1:-1] + ['quality']:
